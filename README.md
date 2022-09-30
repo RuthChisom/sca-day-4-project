@@ -18,7 +18,16 @@ manage data (in this case, blog posts). This is automatically done by django (dj
 6. Create a super user and follow the prompt
 7. Run your server and open http://127.0.0.1:8000/admin/ in your browser
 8. Login to the administration site with the credentials you just created
+9. Add your models to the administration site (blog/admin.py)
 
+
+Now, to read and write content to the database programmatically.
+- Customize your model managers to retrieve all objects in the database in models.py <!--PublishedManager-->
+- Create a view to dislay the list of posts (blog/views.py)
+- Add URL patterns for your view (blog/urls.py)
+- Include the URL patterns of the blog application in the main URL patterns of the project (mysite/urls.py)
+- Create your templates directory
+- Run your server
 
 
 <!-- python manage.py shell allows you to test model values in the terminal -->

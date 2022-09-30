@@ -1,0 +1,19 @@
+<!-- this page will include the main HTML structure of the website and divide the content into the main content area and a sidebar -->
+{% load static %} <!--tells Django to load the static template tags that are provided by the django.contrib.staticfiles-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+    {% block content %} <!--defines a block called content, that will be filled by inheriting templates-->
+    {% endblock %}
+    </div>
+    <div id="sidebar">
+    <h2>My blog</h2>
+    <p>This is my blog.</p>
+</div>
+</body>
+</html>
