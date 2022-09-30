@@ -1,8 +1,9 @@
 # sca-day-4-project
- A simple blog application that allows users to  navigate through all published posts and read single posts
+ A simple blog application
 
- create a simple administration 
-interface to manage and publish posts
+This allows users to  navigate through all published posts and read single posts
+
+I also create a simple administration interface to manage and publish posts
 
 
 1. Define the database models in the models.py file of the application
